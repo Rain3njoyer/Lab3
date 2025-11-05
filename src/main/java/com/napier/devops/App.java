@@ -26,7 +26,8 @@ public class App {
             System.out.println("Connecting to database...");
             try {
                 Thread.sleep(5000); // wait a bit for DB to start
-                String url = System.getenv().getOrDefault("JDBC_URL", "jdbc:mysql://db:3306/employees?allowPublicKeyRetrieval=true&useSSL=false");
+                // default to host-mapped port for running in IntelliJ (localhost:33060)
+                String url = System.getenv().getOrDefault("JDBC_URL", "jdbc:mysql://localhost:33060/employees?allowPublicKeyRetrieval=true&useSSL=false");
                 String user = System.getenv().getOrDefault("DB_USER", "root");
                 String pass = System.getenv().getOrDefault("DB_PASS", "example");
                 con = DriverManager.getConnection(url, user, pass);
