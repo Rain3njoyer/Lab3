@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="App" type="Application" factoryName="Application">
+    <envs>
+      <env name="DB_PASS" value="example" />
+      <env name="DB_USER" value="root" />
+      <env name="JDBC_URL" value="jdbc:mysql://localhost:33060/employees?allowPublicKeyRetrieval=true&amp;useSSL=false" />
+      <env name="ROLE_TITLE" value="Engineer" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.napier.devops.App" />
+    <module name="devops" />
+    <option name="PROGRAM_PARAMETERS" value="Engineer " />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
