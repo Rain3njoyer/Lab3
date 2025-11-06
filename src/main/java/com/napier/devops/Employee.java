@@ -4,8 +4,8 @@ public class Employee {
     public int emp_no;
     public String first_name;
     public String last_name;
-    public String title;
+    public String title;      // optional
     public int salary;
-    public String dept_name;
-    public String manager;
+    public Department dept;   // assigned in getSalariesByDepartment
+    public Employee manager;  // optional
 }
