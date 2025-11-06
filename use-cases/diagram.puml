@@ -1,0 +1,23 @@
+@startuml
+
+actor HR as "HR Advisor"
+
+rectangle "HR System" {
+    usecase UC1 as "Produce report on salary of all employees"
+    usecase UC2 as "Produce report on salary by department"
+    usecase UC3 as "Produce report on salary by role"
+    usecase UC4 as "Add new employee details"
+    usecase UC5 as "View employee details"
+    usecase UC6 as "Update employee details"
+    usecase UC7 as "Delete employee details"
+}
+
+HR --> UC1
+HR --> UC2
+HR --> UC3
+HR --> UC4
+HR --> UC5
+HR --> UC6
+HR --> UC7
+
+@enduml

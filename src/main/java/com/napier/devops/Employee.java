@@ -4,8 +4,10 @@ public class Employee {
     public int emp_no;
     public String first_name;
     public String last_name;
-    public String title;      // optional
+    public String title;
     public int salary;
-    public Department dept;   // assigned in getSalariesByDepartment
-    public Employee manager;  // optional
+    public Department dept;
+    public String dept_name;    // fallback if dept object not used
+    public Employee manager;
+    public String managerName;  // fallback if manager object not used
 }
