@@ -21,9 +21,11 @@ jobs:
 
       - name: Fetch test_db dataset
         run: |
-          mkdir -p db
+          rm -rf db/test_db             # delete old folder if it exists
+          mkdir -p db                   # recreate db folder if needed
           git clone https://github.com/datacharmer/test_db.git db/test_db
+      
+      
 
-          
       - name: Run docker compose
         run: docker compose up --abort-on-container-exit --build
