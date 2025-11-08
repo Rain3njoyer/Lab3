@@ -1,32 +1,7 @@
-version: '3.8'
-
 services:
   db:
-    image: mysql:8.0
-    container_name: mysql-db
-    environment:
-      MYSQL_ROOT_PASSWORD: example
-      MYSQL_DATABASE: employees
+    image: genschsa/mysql-employees
     ports:
-      - "33060:3306"   # map host port 33060 to container 3306
-    volumes:
-      - ./data/employees.sql:/docker-entrypoint-initdb.d/employees.sql
-    networks:
-      - hr_net
-
-  app:
-    build: .
-    container_name: devops_app
-    depends_on:
-      - db
+      - "33060:3306"
     environment:
-      JDBC_URL: jdbc:mysql://db:3306/employees?allowPublicKeyRetrieval=true&useSSL=false
-      DB_USER: root
-      DB_PASS: example
-    command: ["java", "-cp", "target/DevOpsGroupProject-1.0-SNAPSHOT.jar", "com.napier.devops.App"]
-    networks:
-      - hr_net
-
-networks:
-  hr_net:
-    driver: bridge
+      MYSQL_ROOT_PASSWORD: college
