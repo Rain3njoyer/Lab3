@@ -214,16 +214,19 @@ public class App {
      *
      * @param employees The list of employees to print.
      */
-    public void printSalaries(ArrayList<Employee> employees) {
+    public void printSalaries(ArrayList<Employee> employees)
+    {
         // Check employees is not null
-        if (employees == null) {
+        if (employees == null)
+        {
             System.out.println("No employees");
             return;
         }
         // Print header
         System.out.println(String.format("%-10s %-15s %-20s %-8s", "Emp No", "First Name", "Last Name", "Salary"));
         // Loop over all employees in the list
-        for (Employee emp : employees) {
+        for (Employee emp : employees)
+        {
             if (emp == null)
                 continue;
             String emp_string =
@@ -238,16 +241,39 @@ public class App {
      *
      * @param emp Employee to display
      */
-    public void displayEmployee(Employee emp) {
-        if (emp != null) {
-            System.out.println(
-                    emp.emp_no + " "
-                            + emp.first_name + " "
-                            + emp.last_name + "\n"
-                            + emp.title + "\n"
-                            + "Salary:" + emp.salary + "\n"
-                            + emp.dept_name + "\n"
-                            + "Manager: " + emp.manager + "\n");
+    public void displayEmployee(Employee emp)
+    {
+        if (emp != null)
+        {
+            System.out.println(emp.emp_no + " "
+                    + emp.first_name + " "
+                    + emp.last_name + "\n"
+                    + emp.title + "\n"
+                    + "Salary:" + emp.salary + "\n");
+
+            // Check if department exists before accessing it
+            if (emp.dept != null)
+            {
+                System.out.println(emp.dept.dept_name + "\n");
+            }
+            else
+            {
+                System.out.println("No department assigned\n");
+            }
+
+            // Check if manager exists before accessing it
+            if (emp.manager != null)
+            {
+                System.out.println("Manager: " + emp.manager.first_name + " " + emp.manager.last_name + "\n");
+            }
+            else
+            {
+                System.out.println("No manager assigned\n");
+            }
+        }
+        else
+        {
+            System.out.println("No employee provided");
         }
     }
 

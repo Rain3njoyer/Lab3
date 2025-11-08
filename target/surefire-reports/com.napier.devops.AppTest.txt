@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.napier.devops.AppTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.019 sec <<< FAILURE! - in com.napier.devops.AppTest
+displayEmployee  Time elapsed: 0.008 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot read field "dept_name" because "emp.dept" is null
+	at com.napier.devops.AppTest.displayEmployee(AppTest.java:71)
+

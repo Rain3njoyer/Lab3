@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.napier.devops.AppTest" time="0.019" tests="6" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="jansi.mode" value="force"/>
+    <property name="idea.version" value="2025.2.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.17+10"/>
+    <property name="sun.boot.library.path" value="C:\Users\hasee\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\hasee\IdeaProjects\Lab3"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\hasee\IdeaProjects\Lab3"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.17+10"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\hasee\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="maven.ext.class.path" value="E:\Intellij\IntelliJ IDEA 2025.2.4\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="E:\Intellij\IntelliJ IDEA 2025.2.4\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\hasee\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PowerShell\7\;E:\Intellij\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;E:\Intellij\apache-maven-3.9.11\bin;C:\Users\hasee\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Users\hasee\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="maven.conf" value="E:\Intellij\IntelliJ IDEA 2025.2.4\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="C:\Users\hasee\.m2\repository"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="E:\Intellij\IntelliJ IDEA 2025.2.4\plugins\maven\lib\maven3\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\hasee"/>
+    <property name="user.timezone" value="Asia/Karachi"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="hasee"/>
+    <property name="java.class.path" value="E:\Intellij\IntelliJ IDEA 2025.2.4\plugins\maven\lib\maven3\boot\plexus-classworlds-2.8.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Didea.version=2025.2.4 -Dmaven.ext.class.path=E:\Intellij\IntelliJ IDEA 2025.2.4\plugins\maven\lib\maven-event-listener.jar -Djansi.passthrough=true -Dstyle.color=always -Dmaven.repo.local=C:\Users\hasee\.m2\repository package -f pom.xml"/>
+    <property name="java.home" value="C:\Users\hasee\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.17.10-hotspot"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.17"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="maven.home" value="E:\Intellij\IntelliJ IDEA 2025.2.4\plugins\maven\lib\maven3"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-17.0.17+10"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="printSalariesTestContainsNull" classname="com.napier.devops.AppTest" time="0.007"/>
+  <testcase name="displayEmployee" classname="com.napier.devops.AppTest" time="0.008">
+    <error message="Cannot read field &quot;dept_name&quot; because &quot;emp.dept&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot read field "dept_name" because "emp.dept" is null
+	at com.napier.devops.AppTest.displayEmployee(AppTest.java:71)
+</error>
+  </testcase>
+  <testcase name="printSalariesTestEmpty" classname="com.napier.devops.AppTest" time="0"/>
+  <testcase name="printSalariesTestNull" classname="com.napier.devops.AppTest" time="0"/>
+  <testcase name="displayEmployeeTestNull" classname="com.napier.devops.AppTest" time="0.001"/>
+  <testcase name="printSalaries" classname="com.napier.devops.AppTest" time="0"/>
+</testsuite>
